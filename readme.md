@@ -38,3 +38,24 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Setup
+
+```
+brew upgrade composer
+
+composer global require "laravel/installer"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+laravel new appname
+cd appname
+git init
+git add -A
+git ci -m "First commit"
+
+mysql -uroot -h127.0.0.1
+> CREATE DATABASE dbname DEFAULT CHARSET utf8;
+> exit
+
+docker-compose exec app php artisan migrate
+```
+
