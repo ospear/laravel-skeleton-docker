@@ -50,7 +50,7 @@ laravel new appname
 cd appname
 git init
 git add -A
-git ci -m "First commit"
+git commit -m "First commit"
 
 mysql -uroot -h127.0.0.1
 > CREATE DATABASE dbname DEFAULT CHARSET utf8;
